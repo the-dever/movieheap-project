@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="all.min.css" />
+    <link rel="shortcut icon" href="images/logo2.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer type="module" src="js/controller.js"></script>
+    <title>Movie Heap | Your Movie DataBase</title>
+  </head>
+  <body>
+    <i class="fas fa-times cross-bookmark fa-3x icon-hide"></i>
+    <div class="overlay"></div>
+    <div class="quick-view-container">
+      <!-- <i class="fas fa-times cross-icon"></i>
+      <img src="images/mortal-kombat.png" alt="" class="quick-img" />
+      <div class="quick-view-wraper-container">
+        <div class="quick-title-container">
+          <h3 class="quick-heading">Movie Title</h3>
+          <span class="quick-hashtag">#MovieTitle</span>
+        </div>
+        <div class="quick-synopsis">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eos
+          quam debitis recusandae pariatur molestias vero cumque nobis.
+        </div>
+        <div class="quick-info-container">
+          <p class="quick-release">📅 2000</p>
+          <p class="genre">🎞 10k votes</p>
+          <p class="length">⏱ 120 mins</p>
+        </div>
+      </div>
+      <div class="quick-rating">10 / 10 ⭐</div> -->
+    </div>
+    <nav class="nav">
+      <i class="fas fa-sort-down"></i>
+      <img src="images/logo.png" alt="logo" class="nav-img" />
+      <form class="search">
+        <div class="btn search-btn">
+          <span>Search </span><i class="fas fa-search"></i>
+        </div>
+        <input
+          type="text"
+          class="search-field"
+          placeholder="Search over thousands of movies..."
+        />
+        <button class="btn btn-search">Search</button>
+      </form>
+      <div class="nav-btn-container">
+        <button class="btn nav-more">
+          More <i class="fas fa-caret-down"></i>
+        </button>
+        <button class="btn nav-btn nav-btn-1" data-type="trending">
+          Trending
+        </button>
+        <button class="btn nav-btn nav-btn-2" data-type="now_playing">
+          Playing
+        </button>
+        <button class="btn nav-btn nav-btn-3" data-type="upcoming">
+          Upcoming
+        </button>
+        <div class="nav-bookmark-container">
+          <button class="btn nav-btn-bookmark">Favourites</button>
+          <div class="bookmarks">
+            <!-- <div class="no-bookmark">
+              <h6>
+                No favourites yet. Find a good movie and add it to your
+                favourites ;)
+              </h6>
+            </div> -->
+            <!-- <div class="bookmark">
+              <img
+                src="images/mortal-kombat.png"
+                alt="poster"
+                class="nav-bookmark-img"
+              />
+              <h3 class="nav-bookmark-title">Movie Title</h3>
+              <span class="nav-bookmark-rating">10/10 ⭐</span>
+            </div> -->
+            <!-- <div class="bookmark bookmark-more">
+              <i class="fas fa-tv"></i> View more...
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="full-bookmark-container-wrapper">
+      <div class="full-bookmark-container">
+        <!-- <div class="full-bookmark">
+          <img
+            src="images/mortal-kombat.png"
+            alt="poster"
+            class="full-bookmark-img"
+          />
+          <h3 class="full-bookmark-title">Movie Title</h3>
+          <span class="full-bookmark-rating">10/10 ⭐</span>
+        </div> -->
+      </div>
+    </div>
+    <div class="container">
+      <div class="header"></div>
+      <h1 class="header-heading">
+        <span>Thousands of movies on one platform...</span
+        ><span>Thousands of movies...</span>
+      </h1>
+      <div class="header-img-container-wrapper">
+        <h2 class="header-img-heading">Trending Now</h2>
+        <div class="header-img-container header-img-container-1">
+          <!-- <div class="header-img-info-container">
+          <h4 class="header-img-info-title">Movie title</h4>
+          <p class="header-img-info tagline">Trending Now.</p>
+        </div>
+        <figure class="header-img-figure">
+          <img
+            src="images/skylines-movie-review-2020.jpg"
+            alt="posters"
+            class="header-img"
+          />
+        </figure>
+        <button class="btn btn-header-img">
+          More info <i class="fas fa-caret-down"></i>
+        </button> -->
+        </div>
+
+        <div class="header-img-container header-img-container-2"></div>
+
+        <div class="header-img-container header-img-container-3">s</div>
+      </div>
+    </div>
+
+    <section class="section-search-results section-hide" id="section-1">
+      <div class="blue-line blue-line-top"></div>
+      <div class="bar"></div>
+      <div class="search-results-container">
+        <h1 class="search-results-heading"></h1>
+        <div class="search-card-container">
+          <!-- <div class="search-card">
+            <div class="card-container">
+              <img src="images/mortal-kombat.png" alt="Moie-poster" class="search-card-photo"/>
+              <a href="#" class="search-card-info search-card-quick">
+                <i class="fas fa-info-circle"></i> Quick view
+              </a>
+              <a href="#" class="search-card-info search-card-details">
+                <i class="fas fa-file-video"></i> More Deatils
+              </a>
+            </div>
+          </div> -->
+        </div>
+        <div class="pagination-container">
+          <!-- <button class="btn btn-pagination btn-pagination-left">
+            <i class="fas fa-long-arrow-alt-left"></i> page 1
+          </button>
+          <button class="btn btn-pagination btn-pagination-right">
+            page 3 <i class="fas fa-long-arrow-alt-right"></i>
+          </button>
+          <div class="page-container">
+            <div class="page-text"><span>2</span></div>
+          </div> -->
+        </div>
+      </div>
+      <div class="blue-line blue-line-bottom"></div>
+    </section>
+
+    <section class="section-movie-view section-hide" id="section-2">
+      <!-- <div class="review-container slider slider-hide">
+        <div class="review-slide slide">
+          <div class="review-slide-container">
+            <i class="fas fa-times review-cancel-icon"></i>
+            <h2 class="slide-rating"><span>&#8220;</span>10 / 10</h2>
+            <blockquote class="slide-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus placeat beatae eius itaque, dolore quod tempora ad!
+              Ullam nostrum totam labore ipsam odit, doloremque amet, eligendi
+              nobis quibusdam velit error!
+            </blockquote>
+            <div class="slide-details">
+              <img
+                src="images/ben-askren.jpg"
+                alt="avatar"
+                class="slide-author-img"
+              />
+              <div class="slide-author-container">
+                <h6 class="slide-author">Ben Askren</h6>
+                <p class="slide-date">2016</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dots"></div>
+        <button class="btn btn-slider btn-slider-left">
+          <i class="fas fa-long-arrow-alt-left"></i>
+        </button>
+        <button class="btn btn-slider btn-slider-right">
+          <i class="fas fa-long-arrow-alt-right"></i>
+        </button>
+      </div> -->
+      <!-- <div class="movie-img-container">
+        <img src="images/mortal-kombat.png" alt="poster" class="movie-img" />
+        <div class="movie-img-text-container">
+          <p class="movie-img-text">
+            <i class="fas fa-theater-masks"></i> Drama
+          </p>
+          <p class="movie-img-text"><i class="far fa-calendar"></i> 2012</p>
+          <a href="#" class="movie-review-link">
+            <i class="fas fa-align-center"></i> Reviews
+          </a>
+        </div>
+      </div>
+      <div class="movie-info-container">
+        <div class="movie-title-container">
+          <h2 class="movie-title">Mortal Kombat</h2>
+          <div class="movie-info-text-container">
+            <p class="movie-info-text">SOME TEXT</p>
+            <p class="movie-info-text">SOME TEXT</p>
+            <p class="movie-info-text">SOME TEXT</p>
+          </div>
+        </div>
+        <div class="movie-rating-container">
+          <div class="movie-rating-bar"><span>50%</span></div>
+          <p class="movie-rating-text">05 / 10 ⭐</p>
+          <i class="far fa-2x fa-bookmark"></i>
+        </div>
+        <div class="movie-overview-container">
+          <h3 class="movie-overview-heading">Overview</h3>
+          <p class="movie-overivew-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Voluptatibus assumenda quasi aliquid facere neque expedita nisi illo
+            dignissimos quibusdam? Architecto dolor quasi unde, nesciunt neque
+            animi laudantium nisi nemo? Nisi!
+          </p>
+        </div>
+        <div class="movie-crew-container">
+          <h4 class="movie-crew-heading">Starring</h4>
+          <div class="movie-crew-starring-container">
+            <div class="movie-crew-img-container">
+              <img src="images/ben-askren.jpg" alt="crew" class="crew-img" />
+              <p class="crew-name">Ben Askren</p>
+            </div>
+          </div>
+
+          <h4 class="movie-crew-heading">Creators</h4>
+          <div class="movie-crew-production-container">
+            <div class="movie-crew-img-container">
+              <img src="images/ben-askren.jpg" alt="crew" class="crew-img" />
+              <p class="crew-name">Ben Askren</p>
+            </div>
+          </div>
+        </div>
+        <div class="movie-other-container">
+          <div class="tabbed-components">
+            <button
+              class="btn recommended-tab tab-active"
+              data-tab="recommended"
+            >
+              Recommended Movies <i class="fas fa-long-arrow-alt-down"></i>
+            </button>
+            <button class="btn similar-tab" data-tab="similar">
+              Similar Movies <i class="fas fa-long-arrow-alt-down"></i>
+            </button>
+          </div>
+          <div class="movie-other-slider">
+            <div class="movie-other-slide">
+              <div class="movie-other-card">
+                <div class="movie-other-card-container">
+                  <img
+                    src="images/mortal-kombat.png"
+                    alt="Moie-poster"
+                    class="movie-other-card-photo"
+                  />
+                  <p class="movie-other-title">Movie title</p>
+                  <a href="#" class="movie-other-card-info">
+                    <i class="fas fa-file-video"></i> More Deatils
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="movie-other-line"></div>
+        </div>
+      </div>
+      <div class="movie-trailer-container">
+        <div class="movie-trailer">
+          <iframe
+            src="https://www.youtube.com/embed/NYH2sLid0Zc"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <a href="#" class="movie-trailer-text"
+          ><i class="fab fa-youtube"></i> Watch on youtube</a
+        >
+      </div> -->
+    </section>
+
+    <footer class="footer">
+      <div class="footer-img-container">
+        <div class="footer-img footer-img-1">
+          <!-- <img
+            src="images/mortal-kombat-poster.jpg"
+            alt="mortal-kombat"
+            class="footer-img-child"
+          /> -->
+        </div>
+        <div class="footer-img footer-img-2">
+          <!-- <img
+            src="images/spiral-saw-banner.jpeg"
+            alt="spiral"
+            class="footer-img-child"
+          /> -->
+        </div>
+        <div class="footer-img footer-img-3">
+          <!-- <img src="images/nobody.jpg" alt="nobody" class="footer-img-child" /> -->
+        </div>
+      </div>
+      <div class="footer-container">
+        <img src="images/logo2.png" alt="logo" class="footer-img-logo" />
+        <p class="footer-text">
+          &copy <span>This Website was created by SabCodes. </span>The API
+          providers do not endorse <span>or certify </span>this website.
+        </p>
+        <footer class="footer-links-container">
+          <!-- prettier-ignore -->
+          <a href="https://www.themoviedb.org/" class="footer-link" target="_blank">TMDB</a>
+
+          <a href="https://fontawesome.com/" class="footer-link" target="_blank"
+            >Fonts</a
+          >
+          <!-- prettier-ignore -->
+          <a href="https://github.com/" class="footer-link" target="_blank">GitHub</a>
+        </footer>
+      </div>
+      <div class="footer-btn-container">
+        <button class="btn btn-footer">
+          Contact us <i class="fas fa-phone-alt footer-icon"></i>
+        </button>
+      </div>
+
+      <div class="footer-form-container">
+        <form class="form-contact">
+          <h1 class="contact-heading">Ask us anything</h1>
+          <input
+            type="text"
+            class="footer-input"
+            placeholder="Full name"
+            id="name"
+            required
+          />
+          <label for="name" class="footer-label">Full name</label>
+          <input
+            type="email"
+            class="footer-input"
+            placeholder="Email address"
+            id="email"
+            required
+          />
+          <label for="email" class="footer-label">Email address</label>
+          <input
+            type="text"
+            class="footer-message"
+            placeholder="Your message..."
+          />
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
