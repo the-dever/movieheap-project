@@ -1,6 +1,5 @@
 import { IMAGE_URL, overlay } from '../config.js';
 import * as helpers from '../helpers.js';
-import * as reviewView from './ReviewsView.js';
 import {
   searchCardsContainer,
   quickViewContainer,
